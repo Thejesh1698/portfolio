@@ -1,0 +1,69 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+@font-face {
+    font-family: "Recoleta";
+    src: local("Recoleta"),
+    url("assets/styles/fonts/Recoleta.ttf") format("truetype");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "OperatorMono";
+    src: local("OperatorMono"),
+    url("assets/styles/fonts/OperatorMono.ttf") format("truetype");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "OperatorMonoItalic";
+    src: local("OperatorMonoItalic"),
+    url("assets/styles/fonts/OperatorMonoItalic.ttf") format("truetype");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "KaushanScript";
+    src: local("KaushanScript"),
+    url("assets/styles/fonts/KaushanScript.ttf") format("truetype");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Pacifico";
+    src: local("Pacifico"),
+    url("assets/styles/fonts/Pacifico.ttf") format("truetype");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "DancingScript";
+    src: local("DancingScript"),
+    url("assets/styles/fonts/DancingScript.ttf") format("truetype");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "JetBrainsMono";
+    src: local("JetBrainsMono"),
+    url("assets/styles/fonts/JetBrainsMono.ttf") format("truetype");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "JetBrainsMonoItalic";
+    src: local("JetBrainsMonoItalic"),
+    url("assets/styles/fonts/JetBrainsMonoItalic.ttf") format("truetype");
+    font-weight: normal;
+}
