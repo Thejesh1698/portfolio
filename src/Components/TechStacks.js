@@ -18,29 +18,60 @@ function TechStacks() {
 
     useEffect(() => {
         carouselGroupRef.current.addEventListener('wheel', carouselScroll);
+        carouselGroupRef.current.addEventListener('touchstart', touchPadScrollStart);
+        carouselGroupRef.current.addEventListener('touchend', touchPadScrollEnd);
 
         // return () => {
         //     carouselGroupRef.current.removeEventListener('wheel', carouselScroll, { passive: false });
         // }
     }, []);
 
+    let touchStartX = 0;
+
     const carouselScroll = (event) => {
         event.preventDefault();
         if (event.wheelDelta >= 0) { // 'Scroll up'
             if (currentTechRef.current > 1) {
-                currentTechRef.current = currentTechRef.current - 1;
-                setCurrentTech(currentTechRef.current);
-                scrollDirectionRef.current = false;
-                setScrollDirection(scrollDirectionRef.current);
+                carouselScrollUp();
             }
         } else { // 'Scroll down'
             if (currentTechRef.current < 11) {
-                currentTechRef.current = currentTechRef.current + 1;
-                setCurrentTech(currentTechRef.current);
-                scrollDirectionRef.current = true;
-                setScrollDirection(scrollDirectionRef.current);
+                carouselScrollDown();
             }
         }
+    }
+
+    const touchPadScrollStart = (event) => {
+        console.log("touch-start");
+        event.preventDefault();
+        touchStartX = event.changedTouches[0].screenX;
+    }
+
+    const touchPadScrollEnd = (event) => {
+        let touchEndX = event.changedTouches[0].screenX;
+        if (touchEndX < touchStartX) {
+            //swiped left
+            carouselScrollDown();
+        }
+        else if(touchEndX > touchStartX){
+            //swiper right
+            carouselScrollUp();
+        }
+        touchStartX = 0;
+    }
+
+    const carouselScrollUp = () =>{
+        currentTechRef.current = currentTechRef.current - 1;
+        setCurrentTech(currentTechRef.current);
+        scrollDirectionRef.current = false;
+        setScrollDirection(scrollDirectionRef.current);
+    }
+
+    const carouselScrollDown = () =>{
+        currentTechRef.current = currentTechRef.current + 1;
+        setCurrentTech(currentTechRef.current);
+        scrollDirectionRef.current = true;
+        setScrollDirection(scrollDirectionRef.current);
     }
 
     return (
@@ -71,7 +102,7 @@ function TechStacks() {
                                     <div className="carousel-item-level">Level {value.level} </div>
                                     <div className="carousel-item-experience">Experience: 1 year</div>
                                 </div>
-                                <div className="carousel-item-body">something for now something for now something for now something for now something for now something for now something for now something for now something for now something for now</div>
+                                <div className="carousel-item-body">{value.description}</div>
                             </div>);
                         })}
                     </div>

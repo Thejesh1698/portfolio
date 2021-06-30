@@ -22,6 +22,7 @@ export const techStacks = [
         "secondary_color": "C6426E",
         "font_awesome_icon": faJava,
         "level": 8,
+        "description": "Have a strong understanding of Java 8 concepts and an excellent grasp of Java OOPS concepts. The multi-threading concept interests me greatly where it is a subject I've experimented with and worked on few projects. Have worked on Java GUI tools like Java swing and Java FX!"
     },
     {
         "tech": "Spring Boot",
@@ -29,6 +30,7 @@ export const techStacks = [
         "secondary_color": "cbb4d4",
         "font_awesome_icon": faPagelines,
         "level": 7,
+        "description": ""
     },
     {
         "tech": "Python",
@@ -36,6 +38,7 @@ export const techStacks = [
         "secondary_color": "b21f1f",
         "font_awesome_icon": faPython,
         "level": 7,
+        "description": ""
     },
     {
         "tech": "Django",
@@ -43,6 +46,7 @@ export const techStacks = [
         "secondary_color": "ff9966",
         "font_awesome_icon": null,
         "level": 10,
+        "description": ""
     },
     {
         "tech": "Flask",
@@ -50,6 +54,7 @@ export const techStacks = [
         "secondary_color": "4ecdc4",
         "font_awesome_icon": null,
         "level": 5,
+        "description": ""
     },
     {
         "tech": "Javascript",
@@ -57,6 +62,7 @@ export const techStacks = [
         "secondary_color": "bdc3c7",
         "font_awesome_icon": faJs,
         "level": 7,
+        "description": ""
     },
     {
         "tech": "React JS",
@@ -64,6 +70,7 @@ export const techStacks = [
         "secondary_color": "7b4397",
         "font_awesome_icon": faReact,
         "level": 8,
+        "description": ""
     },
     {
         "tech": "SQL",
@@ -71,6 +78,7 @@ export const techStacks = [
         "secondary_color": "BD3F32",
         "font_awesome_icon": faDatabase,
         "level": 8,
+        "description": ""
     },
     {
         "tech": "HTML",
@@ -78,6 +86,7 @@ export const techStacks = [
         "secondary_color": "D76D77",
         "font_awesome_icon": faHtml5,
         "level": 9,
+        "description": ""
     },
     {
         "tech": "CSS",
@@ -85,6 +94,7 @@ export const techStacks = [
         "secondary_color": "E29587",
         "font_awesome_icon": faCss3,
         "level": 9,
+        "description": ""
     },
     {
         "tech": "GIT",
@@ -92,6 +102,7 @@ export const techStacks = [
         "secondary_color": "B06AB3",
         "font_awesome_icon": faGit,
         "level": 9,
+        "description": ""
     }
 ];
 
@@ -305,7 +316,7 @@ export const universityJavaCode = '' +
     tabSpace + tabSpace + '<span class="java-code-keyword">return</span>' +
     '<span class="java-code-variable">university.</span>' +
     '<span class="java-code-function-call">get</span>' +
-    '<span class="java-code-bracket">();</span>'+
+    '<span class="java-code-bracket">();</span>' +
     '</div>' +
     '<div class="java-code-line">' +
     tabSpace + '<span class="java-code-bracket">}</span>' +
@@ -313,9 +324,9 @@ export const universityJavaCode = '' +
     '<div class="java-code-line">' +
     tabSpace + '<span class="java-code-keyword">throw new</span>' +
     '<span class="java-code-variable">ResponseStatusException</span>' +
-    '<span class="java-code-bracket">(</span>'+
-    '<span class="java-code-param">HttpStatus.NOT_FOUND, "University doesn\'t exist"</span>'+
-    '<span class="java-code-bracket">);</span>'+
+    '<span class="java-code-bracket">(</span>' +
+    '<span class="java-code-param">HttpStatus.NOT_FOUND, "University doesn\'t exist"</span>' +
+    '<span class="java-code-bracket">);</span>' +
     '</div>' +
     '<div class="java-code-line">' +
     '<span class="java-code-bracket">}</span>' +
