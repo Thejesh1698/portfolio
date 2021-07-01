@@ -1,15 +1,13 @@
-import logo from './logo.svg';
 import './App.css';
 import MainComponent from "./Components/MainComponent";
+import NotFound from "./Components/ErrorPages/NotFound";
 import './assets/styles/style.scss'
 import {useEffect, useState} from "react";
+import {Route, Switch, BrowserRouter} from 'react-router-dom';
 
 function App() {
 
     const [isLoading, setLoading] = useState(true);
-    const [tailLeft, setTailLeft] = useState(window.innerWidth/2);
-    const [tailTop, setTailTop] = useState(window.innerWidth/2);
-    const [tailOpacity, setTailOpacity] = useState(0);
 
     useEffect(() => {
 
@@ -20,33 +18,24 @@ function App() {
                 setLoading(!isLoading);
             }
         });
-
-        window.addEventListener('mousemove', moveTail)
-
-        return () => { window.removeEventListener('mousemove', moveTail) }
     }, []);
 
     function fakeRequest() {
-        return new Promise(resolve => setTimeout(() => resolve(), 1000));
-    }
-
-    const moveTail = (e) =>{
-        setTailLeft(e.pageX+5);
-        setTailTop(e.pageY+5);
-        setTailOpacity(1);
+        return new Promise(resolve => setTimeout(() => resolve(), 1500));
     }
 
     if (isLoading) {
         return null;
     }
 
-  return (
-      <>
-        <MainComponent/>
-        <div className="mouseTail" style={{left: tailLeft+"px", top:tailTop+"px", opacity:tailOpacity}}/>
-          {/*<img src="https://website-visits-counter.glitch.me/pixel.svg"  className="display-none"  alt=""/>*/}
-      </>
-  );
+    return (
+        <BrowserRouter>
+            <Switch>
+                <Route exact path='/' component={MainComponent}/>
+                <Route path="*" component={NotFound}/>
+            </Switch>
+        </BrowserRouter>
+    );
 }
 
 export default App;

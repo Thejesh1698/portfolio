@@ -6,7 +6,7 @@ import {OverlayTrigger, Tooltip} from 'react-bootstrap';
 
 function Sidebar(props) {
 
-    const [openedNodes, setOpenedNodes] = useState([0]);
+    const [openedNodes, setOpenedNodes] = useState([0, 1, 4, 10, 3]);
     const [FolderTreeData, setFolderTreeData] = useState(getFolderTreeData());
     const [currentNode, setCurrentNode] = useState(0);
 

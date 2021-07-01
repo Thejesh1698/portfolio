@@ -21,17 +21,17 @@ html, body, #root, .outer-body-wrapper {
   }
 }
 
-@media screen and (min-width: 1632px) and (max-width: 1720px) {
-  html {
-    font-size: 18px;
-  }
-}
-
-@media screen and (min-width: 1728px) and (max-width: 1920px) {
-  html {
-    font-size: 20px;
-  }
-}
+//@media screen and (min-width: 1632px) and (max-width: 1720px) {
+//  html {
+//    font-size: 18px;
+//  }
+//}
+//
+//@media screen and (min-width: 1728px) and (max-width: 1920px) {
+//  html {
+//    font-size: 20px;
+//  }
+//}
 
 body {
   overflow-x: hidden;
@@ -261,23 +261,6 @@ a {
   background-color: #35426f;
 }
 
-/*.outer-wrapper{*/
-/*    width: 100%;*/
-/*    height: 100%;*/
-/*    background-color: #7a94f1;*/
-/*    display: flex;*/
-/*    justify-content: center;*/
-/*    align-items: center;*/
-/*}*/
-
-/*.main-wrapper{*/
-/*    width: 97%;*/
-/*    height: 90%;*/
-/*    background-color: #61dafb;*/
-/*    border-radius: 0.5rem;*/
-/*    box-shadow: 5px 15px 500px 1px #000000;*/
-/*}*/
-
 .outer-wrapper {
   width: 100%;
   height: 100%;
@@ -287,8 +270,48 @@ a {
   width: 100%;
   height: 100%;
   position: relative;
-  //max-width: 1536px;
-  //margin: 0 auto;
+  max-width: 1536px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 1632px) {
+  .main-wrapper {
+    margin: 2rem auto 0 auto;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  }
+
+  body {
+    background-color: #283255;
+  }
+
+  .landing-page-wrapper {
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+
+    .body-close-tag {
+      bottom: 7rem;
+    }
+
+    .html-close-tag {
+      bottom: 3rem;
+    }
+  }
+
+  .sidebar-editor-footer .sidebar-editor {
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+
+    .sidebar-wrapper {
+      border-bottom-left-radius: 0.5rem;
+    }
+
+    .editor-wrapper {
+      border-bottom-right-radius: 0.5rem;
+    }
+  }
+
+  .footer-wrapper {
+    box-shadow: none;
+  }
 }
 
 /*------------------Header css----------------*/
@@ -313,66 +336,28 @@ a {
 
 /*---Landing page css----*/
 
-.profile-pic {
-  position: absolute;
-  top: 13rem;
-  right: 10rem;
-  width: 25rem;
-  height: 25rem;
-  border-radius: 50%;
-  background-image: url("./../images/my_pic_7.png");
-  background-size: cover;
-  animation: fadeIn 1.8s linear alternate forwards;
-  z-index: 2;
-}
-
-/*.profile-pic-circle{*/
-/*    position: absolute;*/
-/*    top: 16rem;*/
-/*    right: 12rem;*/
-/*    width: 20rem;*/
-/*    height: 20rem;*/
-/*    border-radius: 50%;*/
-/*    background-image: linear-gradient(315deg, #fd154b 0%, #fc6f60 74%);*/
-/*    box-shadow: 0 5px 6px rgba(0, 0, 0, .3);*/
-/*    z-index: 2;*/
-/*    animation: fadeIn 1.8s linear alternate forwards;*/
-/*}*/
-
-.profile-pic-circle {
-  position: absolute;
-  top: 13rem;
-  right: 10rem;
-  width: 25rem;
-  height: 25rem;
-  border-radius: 50%;
-  /*background-image: linear-gradient(315deg, #fd154b 0%, #fc6f60 74%);*/
-  background-image: linear-gradient(315deg, #fd154b 0%, #fa8f3d 150%);
-  box-shadow: 2px 5px 6px rgba(0, 0, 0, .3) inset;
-  z-index: 2;
-  animation: fadeIn 1.8s linear alternate forwards;
-}
 
 .landing-page-wrapper {
-  /*background-color: #f1dfd1;*/
-  /*background-image: linear-gradient(315deg, #f1dfd1 0%, #f6f0ea 74%);*/
-  /*background-color: #deebdd;*/
-  /*background-image: linear-gradient(315deg, #deebdd 0%, #bbdbbe 74%);*/
-  /*background-color: #b1bfd8;*/
-  /*background-image: linear-gradient(315deg, #b1bfd8 0%, #6782b4 74%);*/
-  background-color: #fc9f6a;
-  /*background-image: linear-gradient(315deg, #fc9f6a 0%, #fd154b 74%);*/
+  //background-color: #f1dfd1;
+  //background-color: #deebdd;
+  //background-image: linear-gradient(315deg, #deebdd 0%, #bbdbbe 74%);
 
   /* option2 */
-  /*background-image: linear-gradient(315deg, #fd154b 0%, #fc9f6a 74%);*/
+  //background-image: linear-gradient(315deg, #fd154b 0%, #fc9f6a 74%);
 
   /* option 1*/
+  /* main option*/
   background-image: linear-gradient(315deg, #fd154b 0%, #fa8f3d 100%);
-  /*background-color: #d9e4f5;*/
-  /*background-image: linear-gradient(315deg, #d9e4f5 0%, #f5e3e6 74%);*/
-  /*background-color: #2f4353;*/
-  /*background-image: linear-gradient(315deg, #2f4353 0%, #d2ccc4 74%);*/
+  //background-color: #d9e4f5;
+  //background-color: #2f4353;
   overflow: hidden;
+
+  .grid-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+  }
 }
 
 .profession-cross {
@@ -397,12 +382,36 @@ a {
   animation: text_writing 5s linear alternate forwards;
 }
 
+.profile-pic-div {
+  .profile-pic {
+    width: 25rem;
+    height: 25rem;
+    border-radius: 50%;
+    background-image: url("./../images/my_pic_7.png");
+    background-size: cover;
+    animation: fadeIn 1.8s linear alternate forwards;
+    z-index: 2;
+  }
+
+  .profile-pic-circle {
+    position: absolute;
+    width: 25rem;
+    height: 25rem;
+    border-radius: 50%;
+    //background-image: linear-gradient(315deg, #fd154b 0%, #fc6f60 74%);
+    background-image: linear-gradient(315deg, #fd154b 0%, #fa8f3d 150%);
+    box-shadow: 2px 5px 6px rgba(0, 0, 0, .3) inset;
+    z-index: 2;
+    animation: fadeIn 1.8s linear alternate forwards;
+  }
+}
+
 
 .landing-page-info {
-  position: absolute;
+  //position: absolute;
   z-index: 1;
-  top: 10rem;
-  left: 10rem;
+  //top: 10rem;
+  //left: 10rem;
   font-family: Recoleta, serif;
   color: #1c233b;
 }
@@ -934,7 +943,7 @@ a {
   width: 90%;
 }
 
-.projects-footer{
+.projects-footer {
   text-align: center;
   margin-top: 2rem;
   font-size: 1.7rem;
@@ -1181,7 +1190,7 @@ a {
 }
 
 .ide-outer {
-  background-image: radial-gradient( #1d2642,#1f272e);
+  background-image: radial-gradient(#1d2642, #1f272e);
   border-radius: 0.5rem;
   box-shadow: rgba(0, 0, 0, 0.3) 0 19px 38px, rgba(0, 0, 0, 0.22) 0 15px 12px;
   color: #bac8fd;
@@ -1216,31 +1225,31 @@ a {
   word-break: break-all;
 }
 
-.java-code-annotation{
+.java-code-annotation {
   color: #6d4d96;
 }
 
-.java-code-bracket{
+.java-code-bracket {
   color: #86929c;
 }
 
-.java-code-string{
+.java-code-string {
   color: #4882ce;
 }
 
-.java-code-function-call{
+.java-code-function-call {
   color: #01f9c6;
 }
 
-.java-code-param{
+.java-code-param {
   color: #cda977;
 }
 
-.java-code-variable{
+.java-code-variable {
   color: #86929c;
 }
 
-.java-code-comment{
+.java-code-comment {
   color: gray;
 }
 
@@ -1589,21 +1598,100 @@ a {
   justify-content: center;
   align-items: center;
 
-  .rocket-loader-wrapper{
+  .rocket-loader-wrapper {
     overflow: hidden;
     width: 80%;
     height: 80%;
 
-    .body{
+    .body {
       top: 40%;
     }
 
-    .loader-text{
+    .loader-text {
       left: 10%;
     }
   }
 }
 
+
+/* --------404 css-------------*/
+.alien-main {
+  background-color: white;
+
+  .alien-header {
+    height: 7%;
+    float: left;
+  }
+
+  .alien-body {
+    height: 93%;
+    float: left;
+
+    .grid-wrapper {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      justify-items: center;
+      align-items: center;
+
+      svg {
+        height: 90%;
+      }
+
+      .alien-right-wing {
+        display: grid;
+        grid-auto-flow: column;
+        grid-template-rows: 1fr 1fr;
+
+        .alien-emoji-wrapper {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: #bcbec1;
+          font-family: DancingScript, serif;
+        }
+
+        .alien-text-wrapper {
+          text-align: center;
+          padding: 0 8rem;
+          //font-family: Recoleta, serif;
+          font-family: DancingScript, serif;
+
+          .alien-error-tag{
+            font-size: 1rem;
+            background-color: #283255;
+            opacity: 0.5;
+            color: white;
+            border-radius: 1rem;
+            display: inline-block;
+            padding: 0.25rem 0.5rem;
+          }
+
+          .alien-error-header {
+            font-size: 4rem;
+            display: block;
+          }
+
+          .alien-error-description {
+            font-size: 1.25rem;
+            display: block;
+            margin-bottom: 1rem;
+            padding: 0 2rem;
+            font-family: Pacifico, serif;
+            color: #a35830;
+          }
+
+          .alien-back-button {
+            //background-color: #283255;
+            background-color: #6d4d96;
+            border-radius: 0.5rem;
+            padding: 0.5rem;
+            font-family: KaushanScript, serif;
+          }
+        }
+      }
+    }
+  }
+}
 
 
 

@@ -14,8 +14,48 @@ function LandingPage() {
 
     return (
         <div className="landing-page-wrapper full-box">
-            <div className="profile-pic-circle"/>
-            <div className="profile-pic"/>
+            <div className="grid-wrapper full-box">
+                <div className="landing-page-info">
+                    <div className="hi-div">
+                        <div className="wobble-effect">H</div>
+                        <div className="wobble-effect">i</div>
+                        <div className="wobble-effect">,</div>
+                    </div>
+                    <div className="thejesh-div">
+                        <div className="wobble-effect">I</div>
+                        <div className="wobble-effect">'</div>
+                        <div className="wobble-effect">m</div>
+                        &nbsp;
+                        <div className="wobble-effect">T</div>
+                        <div className="wobble-effect">h</div>
+                        <div className="wobble-effect">e</div>
+                        <div className="wobble-effect">j</div>
+                        <div className="wobble-effect">e</div>
+                        <div className="wobble-effect">s</div>
+                        <div className="wobble-effect">h</div>
+                    </div>
+                    <div className="nannapaneni-div">
+                        <div className="wobble-effect">N</div>
+                        <div className="wobble-effect">a</div>
+                        <div className="wobble-effect">n</div>
+                        <div className="wobble-effect">n</div>
+                        <div className="wobble-effect">a</div>
+                        <div className="wobble-effect">p</div>
+                        <div className="wobble-effect">a</div>
+                        <div className="wobble-effect">n</div>
+                        <div className="wobble-effect">e</div>
+                        <div className="wobble-effect">n</div>
+                        <div className="wobble-effect">i</div>
+                    </div>
+                    <div className="profession-detail-div">
+                        <div>Software Developer ( Full-Stack | Backend )</div>
+                    </div>
+                </div>
+                <div className="profile-pic-div">
+                    <div className="profile-pic-circle"/>
+                    <div className="profile-pic"/>
+                </div>
+            </div>
             <div className="profession-cross">
                 <svg width="971" height="289" viewBox="0 0 971 289" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path stroke="white" strokeWidth="7"
@@ -26,44 +66,6 @@ function LandingPage() {
             </div>
             <div className="html-open-tag">&#60;html&#62;</div>
             <div className="body-open-tag">&#60;body&#62;</div>
-            <div className="landing-page-info">
-
-                <div className="hi-div">
-                    <div className="wobble-effect">H</div>
-                    <div className="wobble-effect">i</div>
-                    <div className="wobble-effect">,</div>
-                </div>
-                <div className="thejesh-div">
-                    <div className="wobble-effect">I</div>
-                    <div className="wobble-effect">'</div>
-                    <div className="wobble-effect">m</div>
-                    &nbsp;
-                    <div className="wobble-effect">T</div>
-                    <div className="wobble-effect">h</div>
-                    <div className="wobble-effect">e</div>
-                    <div className="wobble-effect">j</div>
-                    <div className="wobble-effect">e</div>
-                    <div className="wobble-effect">s</div>
-                    <div className="wobble-effect">h</div>
-                </div>
-                <div className="nannapaneni-div">
-                    <div className="wobble-effect">N</div>
-                    <div className="wobble-effect">a</div>
-                    <div className="wobble-effect">n</div>
-                    <div className="wobble-effect">n</div>
-                    <div className="wobble-effect">a</div>
-                    <div className="wobble-effect">p</div>
-                    <div className="wobble-effect">a</div>
-                    <div className="wobble-effect">n</div>
-                    <div className="wobble-effect">e</div>
-                    <div className="wobble-effect">n</div>
-                    <div className="wobble-effect">i</div>
-                </div>
-                <div className="profession-detail-div">
-                    <div>Software Developer ( Full-Stack | Backend )</div>
-                </div>
-
-            </div>
             <div className="body-close-tag">&#60;/body&#62;</div>
             <div className="html-close-tag">&#60;/html&#62;</div>
         </div>

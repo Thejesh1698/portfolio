@@ -654,3 +654,16 @@ export const internshipsPythonCode = '<div class="python-code-line">' +
     '<div class="python-code-line">' +
     tabSpace + tabSpace + '}' +
     '</div>'
+
+
+export const errorEmojis = {
+    0: "(>_<)",
+    1: "(;-;)",
+    2: "(^_^)*",
+    3: "(&#8728;_&#8728;)",
+    4: "(&ge;&oscr;&le;)",
+    5: "(^_^*)",
+    6: "\\&#9900;_&#9900;/",
+    7: "(&#8757;)",
+    8: "\\(&#8728;_&#8728;)/",
+}
