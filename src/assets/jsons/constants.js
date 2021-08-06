@@ -7,13 +7,13 @@ import CourseraJavaOops from "./../images/certificate_coursera_oops_in_java.jpeg
 import CourseraMachineLearning from "./../images/certificate_coursera_machine_learning.jpeg"
 import CourseraDeepLearning from "./../images/certificate_coursera_deep_learning.jpeg"
 import ScatterTopGun from "../images/certificate_scatter_top_gun.png"
-import VitPicOne from "./../images/vit_pic_1.png"
-import VitPicThree from "./../images/vit_pic_3.png"
-import VitPicFour from "./../images/vit_pic_4.png"
-import VitPicFive from "./../images/vit_pic_5.png"
-import VitPicSix from "./../images/vit_pic_6.png"
-import VitPicSeven from "./../images/vit_pic_7.png"
-import VitPicEight from "./../images/vit_pic_8.png"
+import VitPicOne from "./../images/vit_pic_1.PNG"
+import VitPicThree from "./../images/vit_pic_3.PNG"
+import VitPicFour from "./../images/vit_pic_4.PNG"
+import VitPicFive from "./../images/vit_pic_5.PNG"
+import VitPicSix from "./../images/vit_pic_6.PNG"
+import VitPicSeven from "./../images/vit_pic_7.PNG"
+import VitPicEight from "./../images/vit_pic_8.PNG"
 
 export const techStacks = [
     {
