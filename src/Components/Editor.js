@@ -7,9 +7,9 @@ import Certificates from "./Certificates";
 import Professional from "./Professional";
 import MyStory from "./MyStory";
 
-function Editor(props) {
+const Editor = (props) => {
     const components_dict = {
-        "techStacks" : <TechStacks/>,
+        "techStacks" : <TechStacks isUsingTrackpad={props.isUsingTrackpad}/>,
         "projects": <Projects/>,
         "university": <University/>,
         "resumePdf": <ResumePdf/>,

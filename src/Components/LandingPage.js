@@ -1,7 +1,6 @@
-import React, {useEffect, useState} from "react";
-import my_pic from "./../assets/images/my_pic_9.png";
+import React from "react";
 
-function LandingPage() {
+const LandingPage = () => {
     // useEffect(() => {
     //     window.addEventListener('mousedown', handleEvent)
     //

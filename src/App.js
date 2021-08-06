@@ -1,7 +1,7 @@
 import './App.css';
 import MainComponent from "./Components/MainComponent";
 import NotFound from "./Components/ErrorPages/NotFound";
-import './assets/styles/style.scss'
+import './assets/styles/css/style.scss';
 import {useEffect, useState} from "react";
 import {Route, Switch, BrowserRouter} from 'react-router-dom';
 

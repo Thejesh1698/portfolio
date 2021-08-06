@@ -1,7 +1,7 @@
 import React from "react";
 import {projectDict} from "../assets/jsons/constants";
 
-function Projects() {
+const Projects = (props) => {
 
     return (
         <div className="projects-wrapper full-box">
@@ -20,8 +20,8 @@ function Projects() {
                                 <div className="project-card-footer">
                                     Link: &nbsp;
                                     {value.link ? value.link !== "#" ?
-                                        <a href={value.link} target="_blank"
-                                           rel="noreferrer">{value.link}</a> : "Will be Available Soon !" :
+                                            <a href={value.link} target="_blank"
+                                               rel="noreferrer">{value.link}</a> : "Will be Available Soon !" :
                                         " Couldn't find it for you unfortunately :/"}
                                 </div>
                             </div>
